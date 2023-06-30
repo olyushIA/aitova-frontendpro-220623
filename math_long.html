@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            const firstPrompt = prompt("Please, enter first number");
+            const secondPrompt = prompt("Please, enter second number");
+            const num1 = +firstPrompt;
+            const num2 = +secondPrompt;
+            let add
+            let subt
+            let mult
+            let div
+            function mathadd(add) {
+                add=num1+num2;
+                return add
+            }
+            function mathsubt(subt) {
+                subt=num1-num2;
+                return subt
+            }
+            function mathmult(mult) {
+                mult=num1*num2;
+                return mult
+            }
+            function mathdiv(div) {
+                div=num1/num2;
+                return div
+            }
+            alert(firstPrompt+"+"+secondPrompt+"="+(mathadd(add))+"\n"+
+            firstPrompt+"-"+secondPrompt+"="+(mathsubt(subt))+"\n"+
+            firstPrompt+"*"+secondPrompt+"="+(mathmult(mult))+"\n"+
+            firstPrompt+"/"+secondPrompt+"="+(mathdiv(div)));
+        </script>
+    </body>
+</html>
