@@ -7,30 +7,24 @@
             const secondPrompt = prompt("Please, enter second number");
             const num1 = +firstPrompt;
             const num2 = +secondPrompt;
-            let add
-            let subt
-            let mult
-            let div
-            function mathadd(add) {
-                add=num1+num2;
-                return add
+            function mathadd() {
+                return num1 + num2;
             }
-            function mathsubt(subt) {
-                subt=num1-num2;
-                return subt
+            function mathsubt() {
+                return num1 - num2;
             }
-            function mathmult(mult) {
-                mult=num1*num2;
-                return mult
+            function mathmult() {
+                return num1 * num2;
             }
-            function mathdiv(div) {
-                div=num1/num2;
-                return div
+            function mathdiv() {
+                return num1 / num2;
             }
-            alert(firstPrompt+"+"+secondPrompt+"="+(mathadd(add))+"\n"+
-            firstPrompt+"-"+secondPrompt+"="+(mathsubt(subt))+"\n"+
-            firstPrompt+"*"+secondPrompt+"="+(mathmult(mult))+"\n"+
-            firstPrompt+"/"+secondPrompt+"="+(mathdiv(div)));
+            const message = (firstPrompt + " + " + secondPrompt + " = " + mathadd() + "\n" +
+            firstPrompt + " - " + secondPrompt + " = " + mathsubt() + "\n" +
+            firstPrompt + " * " + secondPrompt + " = " + mathmult() + "\n" +
+            firstPrompt + " / " + secondPrompt + " = " + mathdiv());
+
+            alert(message);
         </script>
     </body>
 </html>
