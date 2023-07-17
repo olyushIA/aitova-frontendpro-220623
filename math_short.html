@@ -3,17 +3,14 @@
     <head></head>
     <body>
         <script>
-            const firstPrompt = prompt("Please, enter first number");
-            const secondPrompt = prompt("Please, enter second number");
-            const num1 = +firstPrompt;
-            const num2 = +secondPrompt;
+            const num1 = +prompt("Please, enter first number");
+            const num2 = +prompt("Please, enter second number");
             const message = (
-  firstPrompt + " + " + secondPrompt + " = " + (num1 + num2) + "\n" +
-  firstPrompt + " - " + secondPrompt + " = " + (num1 - num2) + "\n" +
-  firstPrompt + " * " + secondPrompt + " = " + (num1 * num2) + "\n" +
-  firstPrompt + " / " + secondPrompt + " = " + (num1 / num2)
-);
-
+                num1 + " + " + num2 + " = " + (num1 + num2) + "\n" +
+                num2 + " - " + num2 + " = " + (num1 - num2) + "\n" +
+                num1 + " * " + num2 + " = " + (num1 * num2) + "\n" +
+                num1 + " / " + num2 + " = " + (num1 / num2)
+            );
 alert(message);
         </script>
     </body>
